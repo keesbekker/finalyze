@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="finalyze:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="finalyze-service-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="finalyze:war exploded" />
+    </root>
+  </artifact>
+</component>
