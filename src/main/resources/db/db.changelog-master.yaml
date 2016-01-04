@@ -1,0 +1,28 @@
+databaseChangeLog:
+  - changeSet:
+      changes:
+        - createTable:
+            tableName: Companies
+            columns:
+              - column:
+                  name: CompanyId
+                  type: long
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: Name
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: Index
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+              - column:
+                    name: Sector
+                    type: varchar(255)
+                    constraints:
+                      nullable: false

@@ -3,6 +3,7 @@ package model;
 
 import org.springframework.data.annotation.Id;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -29,15 +30,19 @@ public class Company {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name="CompanyId")
     private long companyId;
 
     @NotNull
+    @Column(name="Name")
     private String name;
 
     @NotNull
+    @Column(name="Index")
     private String index;
 
     @NotNull
+    @Column(name="Sector")
     private String sector;
 
     @OneToMany
