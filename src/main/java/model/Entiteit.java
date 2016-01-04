@@ -18,6 +18,9 @@ import javax.persistence.Table;
 @Table(name= "Entiteiten")
 public class Entiteit {
 
+    @Column(name="Type")
+    private String type;
+
     @ManyToOne
     @JoinColumn(name = "AnnualAccount_ID", insertable = false, updatable = false)
     private AnnualAccount annualAccount;

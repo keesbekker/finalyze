@@ -26,3 +26,61 @@ databaseChangeLog:
                     type: varchar(255)
                     constraints:
                       nullable: false
+      changes:
+              - createTable:
+                  tableName: AnnualAccounts
+                  columns:
+                    - column:
+                        name: AnnualAccountId
+                        type: long
+                        autoIncrement: true
+                        constraints:
+                          primaryKey: true
+                          nullable: false
+                    - column:
+                        name: year
+                        type: int
+                        constraints:
+                          nullable: false
+                    - column:
+                        name: risksentiment
+                        type: int
+                        constraints:
+                          nullable: false
+                    - column:
+                          name: MdaSentiment
+                          type: int
+                          constraints:
+                            nullable: false
+                    - column:
+                          name: TotalSentiment
+                          type: int
+                          constraints:
+                          nullable: false
+      changes:
+                    - createTable:
+                        tableName: Entiteiten
+                        columns:
+                          - column:
+                              name: Entiteit_ID
+                              type: long
+                              autoIncrement: true
+                              constraints:
+                                primaryKey: true
+                                nullable: false
+                          - column:
+                              name: Type
+                              type: varchar(255)
+                              constraints:
+                                nullable: false
+                          - column:
+                              name: Entiteit
+                              type: varchar(255)
+                              constraints:
+                                nullable: false
+                          - column:
+                                name: Relevance_Score
+                                type: int
+                                constraints:
+                                  nullable: false
+                          

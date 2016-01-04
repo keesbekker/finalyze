@@ -62,6 +62,8 @@ public class AnnualAccount {
     @JoinColumn(name="AnnualAccountId",nullable=false)
     private List<Entiteit> entiteitmdaList;
 
+    @OneToMany
+    @JoinColumn(name="AnnualAccountId",nullable=false)
     public List<Entiteit> getEntiteitriskList() {
         return entiteitriskList;
     }
